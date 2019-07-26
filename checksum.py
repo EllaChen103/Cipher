@@ -1,10 +1,10 @@
-def checksum(lst, x):
-    add_to_end = 1
-    while (sum(lst) + add_to_end) % x != 0:
-        add_to_end += 1
-    lst.append(add_to_end)
+def checkSum(lst, x):
+    addEnd = 1
+    while (sum(lst) + addEnd) % x != 0:
+        addEnd += 1
+    lst.append(addEnd)
     return lst
 
-answer = checksum(list(range(10)), int(input("What is x?")))
+answer = checkSum(list(range(10)), int(input("What is x?")))
 print(answer)
 
